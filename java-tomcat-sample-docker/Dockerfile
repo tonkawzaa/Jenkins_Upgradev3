@@ -1,4 +1,4 @@
 FROM tomcat:8.0
-RUN cp -a /var/lib/jenkins/workspace/Build_Tomcat_Docker_Image/java-tomcat-sample-docker/target/*.war /usr/local/tomcat/webapps/
+RUN cp -a **/*.war /usr/local/tomcat/
 EXPOSE 8080
-CMD ["catalina.sh", "run"]
+CMD ["sudo catalina.sh", "run"]
